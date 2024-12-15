@@ -1,22 +1,179 @@
-<style>
-  .navbar {
-    color: rgb(157, 166, 255);
-    border: 2px rgb(157, 166, 255);
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
-  #container {
-    color: rgb(157, 166, 255);
-    display: grid;
-  }
-</style>
-<div class="navbar">
-  <a href="/">Home</a>
-  <a href="#about">About</a>
-</div>
-<div id="container">
-  <div class="sidebar">Some links</div>
-  <div class="content">Main shit</div>
-  <div class="sidebar2">Other links</div>
-</div>
+<html>
+  <head>
+    <style>
+      .navbar {
+        display: grid;
+        grid-template-columns: 50px 50px;
+        background-color: rgb(131, 142, 236);
+        padding: 5px;
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+      .navbar > div {
+        background-color: rgba(237, 240, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-gap: 10px;
+        background-color: rgb(168, 177, 253);
+        padding: 10px;
+      }
+      .container > div {
+        background-color: rgba(237, 240, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+      }
+      .content {
+        font-size: 25px;
+      }
+      .sidebar {
+        position: sticky;
+        font-size: 20px;
+      }
+      .sidebar2 {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="Home">
+        <a href="/">Home</a>
+      </div>
+      <div class="About">
+        <a href="#about">About</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        Table of Contents
+        <a href="#morelorum">More Lorum Ipsum!</a>
+        <a href="#evenmorelorum">Even More Lorum Ipsum!</a>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Convallis finibus
+          ex gravida luctus vel purus diam volutpat. Vivamus primis primis sem
+          natoque vivamus montes ad. Ex cursus risus nulla donec enim molestie.
+          Conubia ut ultricies himenaeos; curabitur tellus cras ridiculus
+          adipiscing. Ullamcorper nibh tristique vulputate nostra maecenas eros
+          quis nisi. Risus facilisis volutpat, curae nullam eget sapien class
+          neque tempus. Suscipit mattis nec libero ipsum metus lorem mauris
+          posuere.
+        </p>
+        <p>
+          Rutrum facilisis faucibus risus taciti ad nam. Scelerisque nunc hac
+          tempor suscipit fusce mi. Libero sollicitudin ad orci est rutrum.
+          Libero dictum massa senectus odio fusce; cursus donec? Placerat
+          himenaeos natoque placerat; leo praesent sem suscipit venenatis
+          dapibus. Nullam fames quam aenean; phasellus iaculis sociosqu.
+          Lobortis urna auctor metus taciti et porttitor proin conubia.
+        </p>
+        <p>
+          Dapibus quis ornare rutrum parturient neque sagittis fermentum.
+          Pretium vehicula volutpat, malesuada interdum primis pretium finibus.
+          Metus torquent odio faucibus facilisi cubilia hac? Lacinia parturient
+          maecenas feugiat; mollis donec lectus parturient at fringilla.
+          Pulvinar magna fames donec urna mauris molestie. Lacinia accumsan
+          tempus imperdiet accumsan vehicula suspendisse. Arcu enim molestie
+          adipiscing, integer turpis cubilia class sem. Rhoncus diam varius
+          lectus vulputate nibh magna? Lacus lacus posuere efficitur nibh;
+          ridiculus lacinia.
+        </p>
+        <p>
+          Neque dui cras id semper massa fringilla. Facilisis augue habitant
+          facilisis fringilla neque quam ultrices. Nascetur lacus quis iaculis a
+          bibendum inceptos. Elit dictum maximus elit fusce posuere tellus
+          litora. Ullamcorper eleifend pulvinar mauris litora purus tellus quam
+          risus. Habitasse senectus porttitor habitasse ut mattis montes
+          efficitur? Fames class pellentesque iaculis cubilia vitae cras et
+          velit. Tristique nostra nibh venenatis ultrices eu. Ornare finibus
+          ante donec hendrerit maximus mus. Phasellus metus ligula tellus
+          facilisis bibendum quam aenean eu.
+        </p>
+        <p>
+          Purus libero proin interdum malesuada nullam bibendum. Commodo
+          interdum nam vivamus felis ut magnis. Praesent netus interdum mus
+          dolor consequat est penatibus duis ultrices. Egestas augue urna sapien
+          rhoncus rutrum metus. Ipsum habitant netus purus lacinia per. Enim per
+          nullam, commodo tempus nunc dis netus. Maecenas nisl est tempus nulla
+          maecenas nulla ligula aliquet.
+        </p>
+        <p>
+          Erat elit quisque vestibulum nisl ac arcu? Interdum luctus quis libero
+          dis tempus at tortor. Mollis elit congue augue dictum nascetur
+          accumsan augue. Parturient arcu sagittis interdum montes tortor
+          maecenas magnis tempor curabitur. Augue per curae at scelerisque eros
+          cubilia vulputate cras. Velit mi dictum venenatis; accumsan arcu
+          aliquet luctus posuere. Non tempor fermentum facilisi sapien
+          himenaeos, auctor lectus ligula facilisi. Dapibus interdum amet
+          dignissim volutpat vivamus quam. Arcu hac semper dis lobortis habitant
+          quisque accumsan vehicula.
+        </p>
+        <h2 id="morelorum">More Lorum Ipsum!</h2>
+        <p>
+          Porta facilisi enim consectetur proin, potenti malesuada nibh at.
+          Posuere in habitasse praesent, dis condimentum mauris. Finibus nam
+          cras aliquam habitasse elit dapibus netus commodo. Consequat semper in
+          vitae pulvinar vehicula. Ultrices elit congue porta; nisl dui egestas
+          arcu ut. Nascetur tempus nullam nec eget himenaeos volutpat auctor
+          quisque nisl.
+        </p>
+        <p>
+          Arcu congue id bibendum consectetur vitae. Montes adipiscing metus
+          volutpat nullam mattis fusce maximus viverra. Ante ut nunc ipsum
+          auctor inceptos. Nunc malesuada accumsan nisi interdum convallis. Quam
+          nisl etiam gravida ante turpis donec nam. Conubia facilisi magnis a
+          tellus platea nullam ultrices ex varius. Aliquet elit dignissim libero
+          varius morbi ad penatibus. Mauris quam gravida ridiculus id ultrices
+          integer tellus mauris. Facilisi proin eros tempor arcu cras finibus
+          mus congue. Vel condimentum consequat dui, dictum tellus euismod.
+        </p>
+        <p>
+          Vehicula amet justo rhoncus fusce elit mauris penatibus; praesent
+          himenaeos. Pellentesque tristique facilisi sodales, aenean augue
+          taciti suscipit. Leo odio massa posuere phasellus sollicitudin semper
+          curae lorem curae. Cubilia nam ex platea consequat ridiculus urna
+          inceptos. Sociosqu ultrices pretium nisl ornare ridiculus nibh
+          torquent ante urna. Mollis mollis lectus penatibus platea gravida;
+          facilisis arcu venenatis. Accumsan montes semper tortor ac lobortis.
+          Adipiscing ultrices elementum curae quisque efficitur fermentum. Id ad
+          efficitur curabitur montes feugiat mauris.
+        </p>
+        <p>
+          Sit nisi luctus tincidunt orci in, hac lectus habitant. Faucibus dis
+          habitant et nec sagittis integer magnis. Risus interdum massa natoque
+          dis scelerisque nulla. Arcu lobortis ultrices fames consequat morbi
+          quis. Augue parturient a torquent malesuada nibh class turpis. Id
+          varius ullamcorper elementum porta mattis egestas nec cras praesent.
+          Purus aliquet purus posuere; felis urna maximus metus.
+        </p>
+        <p>
+          Acubilia pretium sagittis natoque, sagittis venenatis quam. Massa
+          dolor mattis ut dolor porttitor congue curabitur. Nullam bibendum
+          pellentesque malesuada cubilia in arcu per praesent. Consectetur hac
+          tristique velit sociosqu eget facilisis condimentum odio enim. Luctus
+          eleifend lacus dolor lacus pulvinar. Fusce lacinia praesent imperdiet
+          tempor vivamus semper lacus pharetra.
+        </p>
+        <p>
+          Habitant purus mollis cras consectetur viverra. Sollicitudin rutrum
+          consequat blandit habitasse volutpat montes praesent non. Aenean magna
+          bibendum curae neque tempor venenatis, netus maecenas finibus? Curae
+          magna penatibus dignissim maximus, suspendisse ullamcorper convallis.
+          At semper nostra sapien amet suspendisse sociosqu venenatis est.
+          Penatibus sem facilisi inceptos suscipit lacus penatibus pharetra
+          facilisis. Penatibus malesuada donec nam porttitor molestie id
+          aliquam.
+        </p>
+        <h2 id="evenmorelorum">Even More Lorum Ipsum!</h2>
+      </div>
+      <div class="sidebar2">Please end my suffering I beg of you</div>
+    </div>
+  </body>
+</html>
