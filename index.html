@@ -1,20 +1,51 @@
 <html>
   <head>
     <style>
-      .navbar {
-        display: grid;
-        grid-template-columns: 50px 50px;
-        background-color: rgb(131, 142, 236);
-        padding: 5px;
+      nav#navbar {
         position: sticky;
         top: 0;
         left: 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 0px;
+        background-color: rgb(131, 142, 236);
+        padding: 0;
+        z-index: 10000;
       }
-      .navbar > div {
-        background-color: rgba(237, 240, 255, 0.8);
+      nav#TOC {
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 70px 70px 70px 70px;
+      }
+      a.TOCitem {
+        color: rgb(75, 83, 158);
+        margin: 0;
+        padding: 10px;
+        border: 0;
         text-align: center;
-        padding: 20px;
-        font-size: 20px;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+      a.TOCitem:hover {
+        color: rgb(67, 76, 160);
+        background-color: rgb(112, 124, 231);
+      }
+      div.TOC {
+        text-align: center;
+      }
+      a.navbaritem {
+        color: rgb(75, 83, 158);
+        margin: 0;
+        padding: 10px;
+        border: 0;
+        text-align: center;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+      a.navbaritem:hover {
+        color: rgb(67, 76, 160);
+        background-color: rgb(112, 124, 231);
       }
       .container {
         display: grid;
@@ -32,7 +63,6 @@
         font-size: 25px;
       }
       .sidebar {
-        position: sticky;
         font-size: 20px;
       }
       .sidebar2 {
@@ -41,20 +71,18 @@
     </style>
   </head>
   <body>
-    <div class="navbar">
-      <div class="Home">
-        <a href="/">Home</a>
-      </div>
-      <div class="About">
-        <a href="#about">About</a>
-      </div>
-    </div>
+    <nav id="navbar">
+      <a href="#home" class="navbaritem">Home</a>
+      <a href="#about" class="navbaritem">About</a>
+    </nav>
     <div class="container">
       <div class="sidebar">
-        Table of Contents
-        <a href="#lorum">Lorum Ipsum!</a>
-        <a href="#morelorum">More Lorum Ipsum!</a>
-        <a href="#evenmorelorum">Even More Lorum Ipsum!</a>
+        <nav id="TOC">
+          <div class="TOC">Table of Contents</div>
+          <a href="#lorum" class="TOCitem">Lorum Ipsum!</a>
+          <a href="#morelorum" class="TOCitem">More Lorum Ipsum!</a>
+          <a href="#evenmorelorum" class="TOCitem">Even More Lorum Ipsum!</a>
+        </nav>
       </div>
       <div class="content">
         <h2 id="lorum">Lorum Ipsum!</h2>
