@@ -1,6 +1,15 @@
 <html>
   <head>
     <style>
+      body {
+        color: rgb(15, 15, 15);
+        font-style: oblique;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #CoolImage {
+        float: left;
+      }
       #navbar {
         position: sticky;
         top: 0;
@@ -8,7 +17,7 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 0px;
-        background-color: rgb(131, 142, 236);
+        background-color: rgb(180, 180, 180);
         padding: 0;
         z-index: 10000;
       }
@@ -17,9 +26,12 @@
         left: 0;
         display: grid;
         grid-template-columns: 70px 70px 70px 70px;
+        grid-gap: 0px;
+        padding: 0;
+        z-index: 10000;
       }
       a.TOCitem {
-        color: rgb(75, 83, 158);
+        color: rgb(2, 2, 2);
         margin: 0;
         padding: 10px;
         border: 0;
@@ -28,34 +40,32 @@
         text-decoration: none;
       }
       a.TOCitem:hover {
-        color: rgb(67, 76, 160);
-        background-color: rgb(112, 124, 231);
-      }
-      div.TOC {
-        text-align: center;
+        color: rgb(2, 2, 2);
+        background-color: rgb(221, 221, 221);
       }
       a.navbaritem {
-        color: rgb(75, 83, 158);
+        color: rgb(2, 2, 2);
         margin: 0;
         padding: 10px;
         border: 0;
         text-align: center;
         font-weight: bolder;
         text-decoration: none;
+        font-size: 25px;
       }
       a.navbaritem:hover {
-        color: rgb(67, 76, 160);
-        background-color: rgb(112, 124, 231);
+        color: rgb(2, 2, 2);
+        background-color: rgb(146, 146, 146);
       }
       .container {
         display: grid;
-        grid-template-columns: 200px auto 200px;
+        grid-template-columns: 200px auto;
         grid-gap: 10px;
-        background-color: rgb(168, 177, 253);
+        background-color: rgb(221, 221, 221);
         padding: 10px;
       }
       .container > div {
-        background-color: rgba(237, 240, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
         padding: 20px 0;
       }
@@ -65,20 +75,19 @@
       .sidebar {
         font-size: 20px;
       }
-      .sidebar2 {
-        font-size: 20px;
-      }
     </style>
   </head>
   <body>
     <nav id="navbar">
       <a href="#home" class="navbaritem">Home</a>
       <a href="#about" class="navbaritem">About</a>
+      <a href="#products" class="navbaritem">Products</a>
+      <a href="#employees" class="navbaritem">Employees</a>
     </nav>
     <div class="container">
       <div class="sidebar">
-        <nav id="TOC">
-          <div class="TOC">Table of Contents</div>
+        <nav class="sidebarcontent">
+          <div class="TOCtitle">Table of Contents</div>
           <a href="#lorum" class="TOCitem">Lorum Ipsum!</a>
           <a href="#morelorum" class="TOCitem">More Lorum Ipsum!</a>
           <a href="#evenmorelorum" class="TOCitem">Even More Lorum Ipsum!</a>
@@ -87,6 +96,12 @@
       <div class="content">
         <h2 id="lorum">Lorum Ipsum!</h2>
         <p>
+          <img
+            id="CoolImage"
+            src="CoolImage.png.jpg"
+            alt="Cool Image.png :D"
+            style="width: 170px; height: 170px; margin-right: 15px"
+          />
           Lorem ipsum odor amet, consectetuer adipiscing elit. Convallis finibus
           ex gravida luctus vel purus diam volutpat. Vivamus primis primis sem
           natoque vivamus montes ad. Ex cursus risus nulla donec enim molestie.
@@ -147,6 +162,12 @@
         </p>
         <h2 id="morelorum">More Lorum Ipsum!</h2>
         <p>
+          <img
+            id="CoolImage"
+            src="CoolImage.png.jpg"
+            alt="Cool Image.png :D"
+            style="width: 200px; height: 200px; margin-right: 15px"
+          />
           Porta facilisi enim consectetur proin, potenti malesuada nibh at.
           Posuere in habitasse praesent, dis condimentum mauris. Finibus nam
           cras aliquam habitasse elit dapibus netus commodo. Consequat semper in
@@ -203,7 +224,6 @@
         </p>
         <h2 id="evenmorelorum">Even More Lorum Ipsum!</h2>
       </div>
-      <div class="sidebar2">Please end my suffering I beg of you</div>
     </div>
   </body>
 </html>
